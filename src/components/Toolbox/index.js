@@ -10,8 +10,6 @@ const Toolbox = () => {
   const activeMenuItem = useSelector((state) => state.menu.activeMenuItem);
   const { color, size } = useSelector((state) => state.toolbox[activeMenuItem]);
 
-  console.log('@@@', color, COLORS.BLACK);
-
   const showStrokeToolOption = activeMenuItem === MENU_ITEMS.PENCIL;
   const showBrushtoolOption =
     activeMenuItem === MENU_ITEMS.PENCIL ||
